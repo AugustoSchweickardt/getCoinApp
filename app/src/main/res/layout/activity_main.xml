@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/marine_blue"
+        android:layout_centerHorizontal="true"
+        android:padding="50dp"
+        android:id="@+id/relativeTop">
+
+        <TextView
+            android:id="@+id/nomeApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Coinlib App"
+            android:textSize="50sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/resumoApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nomeApp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Aplicativo para verificar valores de criptomoedas"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/botaoBitcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resumoApp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"
+            android:minWidth="125dip"
+            android:minHeight="78dip"
+            android:text="Bitcoin"
+            android:textSize="20dp"
+            android:backgroundTint="@color/dark_marine_blue"/>
+
+        <Button
+            android:id="@+id/botaoEthereum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resumoApp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:minWidth="125dip"
+            android:minHeight="78dip"
+            android:text="Ethereum"
+            android:textSize="20dp"
+            android:backgroundTint="@color/dark_marine_blue"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeTop"
+        android:layout_centerHorizontal="true"
+        android:background="@color/greyish_blue"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/textoValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Valor da moeda"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/displayValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoValor"
+            android:layout_centerHorizontal="true"
+            android:hint="Valor em R$"
+            android:textColorHint="@color/white"
+            android:padding="50dp"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
